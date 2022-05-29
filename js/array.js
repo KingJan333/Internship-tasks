@@ -7,20 +7,20 @@ const myArray = [
 
 let myElement = myArray.find(element => element.id == 3)
 
-console.log(myElement.name)
+// console.log(myElement.name)
 
 let myElementIndex = myArray.findIndex(element => element.id == 2)
-console.log(myElementIndex)
+// console.log(myElementIndex)
 
-myArray.forEach(element => console.log(element.name))
+// myArray.forEach(element => console.log(element.name))
 
 let elFilter = myArray.filter(element => element.id < 4)
 
-console.log(elFilter)
+// console.log(elFilter)
 
 let myMap = myArray.map(element => element * 3)
 
-console.log(myMap.length)
+// console.log(myMap.length)
 
 const car = [
     'audi',
@@ -30,33 +30,33 @@ const car = [
 ]
 
 let hasCarAudi = car.includes('audi')
-console.log(hasCarAudi)
+// console.log(hasCarAudi)
 
 let hasCarBmw = car.indexOf('bmw')
-console.log(hasCarBmw)
+// console.log(hasCarBmw)
 
 const numbers = [1, 2, 3, 4]
 
 const otherNumbers = [5, 6, 7, 8]
 
 let fullNumbers = numbers.concat(otherNumbers)
-console.log(fullNumbers)
+// console.log(fullNumbers)
 
 let fullNumbersSpread = [...numbers, ...otherNumbers]
-console.log(fullNumbersSpread)
+// console.log(fullNumbersSpread)
 
 const animals = ['cat', 'dog', 'rabbit', 'owl']
 
 let houseAnimals = animals.slice(0,3)
-console.log(houseAnimals)
+// console.log(houseAnimals)
 
 const flatArray = [1, [2, [3]]]
 
 let flatArray1 = flatArray.flat(1)
-console.log(flatArray1)
+// console.log(flatArray1)
 
 let flatArray2 = flatArray.flat(Infinity)
-console.log(flatArray2)
+// console.log(flatArray2)
 
 const potentialParticipants = [
     { id: 'k38i', name: 'john', age: 17 },
@@ -70,29 +70,29 @@ const participantsFormatted = potentialParticipants
     .map(user => user.name)
     .join(', ')
    
-console.log(participantsFormatted)
+// console.log(participantsFormatted)
 
 const nodes = document.querySelectorAll('.todoItem')
 
 const todoItems = Array.from(nodes)
 
-console.log(todoItems)
+// console.log(todoItems)
 
 const todos = ['Написание статьи', 'Вычитка']
 todos.push('Публикация')
-console.log(todos)
+// console.log(todos)
 
 const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май']
-console.log(months)
+// console.log(months)
 months.splice(1,2)
-console.log(months)
+// console.log(months)
 
 const ticket = [1, 2, 3, 4, 5]
 
 const firstTicket = ticket.shift()
-console.log(firstTicket)
-console.log(ticket)
+// console.log(firstTicket)
+// console.log(ticket)
 
 const firstTicket2 = ticket.unshift(1)
-console.log(firstTicket2)
-console.log(ticket)
+// console.log(firstTicket2)
+// console.log(ticket)
