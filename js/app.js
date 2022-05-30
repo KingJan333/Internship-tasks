@@ -82,3 +82,36 @@ const promise2 = new Promise(resolve => setTimeout(resolve, 2000, 'two'));
 const promise3 = new Promise(resolve => setTimeout(resolve, 3000, 'three'));
 
 Promise.all([promise1, promise2, promise3]).then(value => console.log(value));
+
+// Class 
+
+let a = 'nick';
+let b = '231kfalklf';
+
+class User {
+    constructor(username, password) {
+        this.username = username
+        this.password = password
+    }
+    validatePassword() {
+        if(this.password.length > 7) {
+            return true
+        } 
+        return false
+    }
+}
+
+const person = new User(a, b)
+
+console.log(person.validatePassword())
+
+class Student extends User {
+    constructor(username, password, nickname) {
+        super(username, password)
+        this.nickname = nickname
+    }
+}
+
+let firstStudent = new Student(a, b, 'pinki')
+
+console.log(firstStudent)
